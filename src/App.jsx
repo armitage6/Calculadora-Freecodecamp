@@ -14,12 +14,19 @@ function App() {
   };
 
   const borrarInput = () => {
-    setInput('')
-  }
+    setInput('');
+  };
 
   const calcularResultado = () => {
-    setInput(evaluate(input));
-  }
+    if (input) {
+      setInput(evaluate(input)); //Transofrma una cadena de caracteres en expresion matematica
+    } else {
+      alert('Por Favor Ingrese Valores para Realizar los Cálculos');
+    }
+
+  };
+  //truthy y falsy, valores que por si solos son verdaderos o falsos las cadenas sin caracteres son falsas y si no estas vacias son verdaderas 
+
 
   return (
     <div className='App'>

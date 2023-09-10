@@ -12,7 +12,7 @@ const Buton = (props) => {
 
   return (
     <div className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trim()}
-      onClick={() => props.manejarClic(props.children)}>
+      onClick={() => props.manejarClic(props.children)} >
       {props.children}
     </div>
   )
